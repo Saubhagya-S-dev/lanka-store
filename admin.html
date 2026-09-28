@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Lanka Store | Admin Dashboard</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="container nav-inner">
+
+<a
+    href="index.html"
+    class="logo"
+>
+
+<span class="logo-mark">
+    🛍️
+</span>
+
+Lanka Store Admin
+
+</a>
+
+
+<div class="nav-actions">
+
+<span id="adminEmail"></span>
+
+<button
+    id="logoutBtn"
+    class="btn btn-danger"
+>
+    Logout
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+
+<main class="page">
+
+<div class="container">
+
+<div class="section-head">
+
+<span class="badge">
+    Dashboard
+</span>
+
+<h2>
+    Admin Dashboard
+</h2>
+
+<p>
+    Manage and review store orders.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+    Recent Orders
+</h3>
+
+<br>
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+    Tracking
+</th>
+
+<th>
+    Customer
+</th>
+
+<th>
+    Total
+</th>
+
+<th>
+    Status
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="ordersTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+
+<script src="js/auth.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+</html>

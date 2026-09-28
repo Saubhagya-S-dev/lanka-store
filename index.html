@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Lanka Store | Online Shopping</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-inner">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <span class="logo-mark">
+                🛍️
+            </span>
+
+            <span>
+                Lanka Store
+            </span>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="#products">
+                Products
+            </a>
+
+            <a href="tracking.html">
+                Track Order
+            </a>
+
+            <a href="admin.html">
+                Admin
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a
+                href="login.html"
+                class="btn btn-light login-btn"
+            >
+                Login
+            </a>
+
+            <a
+                href="cart.html"
+                class="btn btn-primary"
+            >
+                🛒 Cart
+                <span class="cart-count">
+                    0
+                </span>
+            </a>
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="mobileMenu"
+        class="mobile-menu container"
+    >
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="#products">
+            Products
+        </a>
+
+        <a href="tracking.html">
+            Track Order
+        </a>
+
+        <a href="admin.html">
+            Admin
+        </a>
+
+        <a href="login.html">
+            Login
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <span class="badge">
+                🇱🇰 Sri Lankan Online Store
+            </span>
+
+            <h1>
+                Shop
+                <span>Smart.</span>
+                <br>
+                Live Better.
+            </h1>
+
+            <p>
+                Discover electronics, fashion and home
+                products with a simple and modern shopping
+                experience.
+            </p>
+
+
+            <div class="search-bar">
+
+                <input
+                    id="heroSearch"
+                    type="text"
+                    placeholder="Search products..."
+                >
+
+                <button
+                    class="btn btn-primary"
+                    onclick="
+                    document.getElementById('searchInput').value =
+                    document.getElementById('heroSearch').value;
+                    filterProducts();
+                    document.getElementById('products').scrollIntoView();
+                    "
+                >
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80"
+                alt="Online shopping"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    class="section"
+    id="products"
+>
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <span class="badge">
+                Our Collection
+            </span>
+
+            <h2>
+                Popular Products
+            </h2>
+
+            <p>
+                Choose what you need and add it to your cart.
+            </p>
+
+        </div>
+
+
+        <div class="filters">
+
+            <input
+                class="input"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+
+            <select
+                class="select"
+                id="categoryFilter"
+            >
+
+                <option value="All">
+                    All Categories
+                </option>
+
+                <option value="Electronics">
+                    Electronics
+                </option>
+
+                <option value="Fashion">
+                    Fashion
+                </option>
+
+                <option value="Home">
+                    Home
+                </option>
+
+            </select>
+
+
+            <a
+                href="cart.html"
+                class="btn btn-light"
+            >
+                Open Cart
+            </a>
+
+        </div>
+
+
+        <div
+            class="product-grid"
+            id="productGrid"
+        ></div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <strong>
+            Lanka Store
+        </strong>
+
+        <p>
+           Your trusted online shopping destination in Sri Lanka.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/store.js"></script>
+
+</body>
+</html>
